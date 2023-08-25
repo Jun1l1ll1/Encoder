@@ -6,3 +6,5 @@ Hello ^^
 Hi
 
 Hvordan går det?
+
+It's going pretty okay

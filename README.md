@@ -84,3 +84,5 @@ I: The teacher came late to class and left early as well
 J: MOK læreren?
 
 I: Jup!
+
+J: Har du funnet mye å skrive om i norsken?

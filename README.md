@@ -1,16 +1,18 @@
 # Encoder
 A website that can encode text
 
-Hello ^^
+J: Hello ^^
 
-Hi
+I: Hi
 
-Hvordan går det?
+J: Hvordan går det?
 
-It's going pretty okay
+I: It's going pretty okay
 
-Great! Same here ^^
+J: Great! Same here ^^
 
-Epic!
+I: Epic!
 
-Klar for mord og kjærlighet
+J: Klar for mord og kjærlighet
+
+I: Yeah I'd say so, also I changed the format a bit to make it easier to understand. ^v^

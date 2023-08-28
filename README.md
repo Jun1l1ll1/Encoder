@@ -26,3 +26,5 @@ J: Sees i norsk ^^
 I: Jup, guess so!
 
 J: Måtte flytte meg T^T Det er engelsk i klasserommets
+
+I: Ah gotcha XD

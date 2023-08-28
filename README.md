@@ -76,3 +76,5 @@ I: Sure 1 sec
 J: Er timen over nå?
 
 I: Yeah think so
+
+J: *thumbs up*

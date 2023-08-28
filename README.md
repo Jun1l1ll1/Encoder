@@ -68,3 +68,5 @@ I: Though at the same time he hasn't really given us a deadline either lol
 J: oh god, jaja, hf med "I" posteren din
 
 I: Thanks... Bro han har nå laget et dokument til en annen oppgave og teksten er så cursed men han gjør det med villige så det skal være artsy-fartsy og det er så tungvindt ålese man, jeg vil heller lese det på nynorsk TwT
+
+J: Oh no, har du bilde å sende på teams?

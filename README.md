@@ -35,4 +35,4 @@ I: F. The classroom is very normal, the teacher is still kinda weird XD
 
 J: XD
 
-I: XD
+I: "OneNote er bare sånn, dø liksom" -teacher

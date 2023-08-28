@@ -62,3 +62,5 @@ J: Helt til jul???
 I: Yeah that's what it says on the teams task, though that's not the actual deadline XD
 
 J: Ah, ok XD
+
+I: Though at the same time he hasn't really given us a deadline either lol

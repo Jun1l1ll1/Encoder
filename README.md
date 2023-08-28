@@ -16,3 +16,5 @@ I: Epic!
 J: Klar for mord og kjærlighet
 
 I: Yeah I'd say so, also I changed the format a bit to make it easier to understand. ^v^
+
+J: Liker det! Det ser bra ut ^^

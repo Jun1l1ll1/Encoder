@@ -32,3 +32,5 @@ I: Ah gotcha XD
 J: Så nå sitter jeg på biblioteket :/ Mange trapper... Hvordan er det hos deg?
 
 I: F. The classroom is very normal, the teacher is still kinda weird XD
+
+J: XD

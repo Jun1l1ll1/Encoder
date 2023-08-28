@@ -36,3 +36,5 @@ I: F. The classroom is very normal, the teacher is still kinda weird XD
 J: XD
 
 I: "OneNote er bare sånn, dø liksom" -teacher
+
+J: XD Faktisk?? (sry sent sver, ser på mattevideo im induksjonsbevis)

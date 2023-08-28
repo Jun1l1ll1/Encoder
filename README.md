@@ -74,3 +74,5 @@ J: Oh no, har du bilde å sende på teams?
 I: Sure 1 sec
 
 J: Er timen over nå?
+
+I: Yeah think so

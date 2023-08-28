@@ -50,3 +50,5 @@ J: Fun XD Høres ut som en kul lærer egentlig ^^
 I: He is, I|m just worried that all the classes will take forever to start up and that he is gonna go a lot back and fourth making it confusing for me
 
 J: Fair, kan se for meg det, ja
+
+I: We now have a task and it's due date is Christmas

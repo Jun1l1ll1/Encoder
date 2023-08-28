@@ -64,3 +64,5 @@ I: Yeah that's what it says on the teams task, though that's not the actual dead
 J: Ah, ok XD
 
 I: Though at the same time he hasn't really given us a deadline either lol
+
+J: oh god, jaja, hf med "I" posteren din

@@ -10,3 +10,5 @@ Hvordan går det?
 It's going pretty okay
 
 Great! Same here ^^
+
+Epic!

@@ -88,3 +88,5 @@ I: Jup!
 J: Har du funnet mye å skrive om i norsken?
 
 I: HahahahahahhajsssaiskxjahjUAJ no.
+
+J: synd

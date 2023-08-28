@@ -12,3 +12,5 @@ It's going pretty okay
 Great! Same here ^^
 
 Epic!
+
+Klar for mord og kjærlighet

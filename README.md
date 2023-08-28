@@ -90,3 +90,5 @@ J: Har du funnet mye å skrive om i norsken?
 I: HahahahahahhajsssaiskxjahjUAJ no.
 
 J: synd
+
+I: O kidy trsøodrf yjsy smupmr vsm trsf yjod yrcy do ejsy of er rmvpfr oy øolr yjod!

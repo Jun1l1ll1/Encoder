@@ -40,3 +40,5 @@ I: "OneNote er bare sånn, dø liksom" -teacher
 J: XD Faktisk?? (sry sent sver, ser på mattevideo im induksjonsbevis)
 
 I: Yeah, I don't think he is very high tech, he is now struggling taking attendence cause he doesn't know how  XD (No worries lol)
+
+J: XD Epic, kan se for meg at det blir mye analogt i deres timer. Tegne skisser på ark og sånn

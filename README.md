@@ -56,3 +56,5 @@ I: We now have a task and it's due date is Christmas
 J: XD XD Hva er oppgaven?
 
 I: Making a poster for the first letter in our name
+
+J: Helt til jul???

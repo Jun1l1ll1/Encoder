@@ -80,3 +80,5 @@ I: Yeah think so
 J: *thumbs up*
 
 I: The teacher came late to class and left early as well
+
+J: MOK læreren?

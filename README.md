@@ -58,3 +58,5 @@ J: XD XD Hva er oppgaven?
 I: Making a poster for the first letter in our name
 
 J: Helt til jul???
+
+I: Yeah that's what it says on the teams task, though that's not the actual deadline XD

@@ -98,3 +98,5 @@ J: Ayew, cæbajkufwew p kwaw sæ..
 I: O søtrsfu trhtry yjos---
 
 J: Mro fs. fry nøot hæu"
+
+I: Yjod od jotonør yjpihj 

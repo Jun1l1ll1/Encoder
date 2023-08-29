@@ -122,3 +122,5 @@ I: *cri*
 J: J9y9yqyq
 
 I: My master plan! MYAHAHAHAHAHAHAHA
+
+J: XD Skal teste noe: <br>Hei

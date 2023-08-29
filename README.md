@@ -108,3 +108,5 @@ I: Know what, fuck this, my brain can't take this shit XD
 J: Mppppppppppppppppppppppppppppppppppppp""""""
 
 I: Yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssss!!!!!!!!!!!!!!!!
+
+J: 5¤#(% 31, 6$1 {#3 3#%%# 31§

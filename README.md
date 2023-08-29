@@ -94,3 +94,5 @@ J: synd
 I: O kidy trsøodrf yjsy smupmr vsm trsf yjod yrcy dp ejsy of er rmvpfr oy øolr yjod!
 
 J: Ayew, cæbajkufwew p kwaw sæ..
+
+I: O søtrsfu trhtry yjos---

@@ -100,3 +100,5 @@ I: O søtrsfu trhtry yjos---
 J: Mro fs. fry nøot hæu"
 
 I: Yjod od jotonør yjpihj 
+
+J: Øoyy vitdrf sy bo dltobrt o TRSF;R goørm CF

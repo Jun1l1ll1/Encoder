@@ -99,6 +99,6 @@ I: O søtrsfu trhtry yjos---
 
 J: Mro fs. fry nøot hæu"
 
-I: Yjod od jotonør yjpihj 
+I: Yjod od jptonør yjpihj 
 
-J: Øoyy vitdrf sy bo dltobrt o TRSF;R goørm CF
+J: Øoyy vitdrf sy bo o TRSF;R goørm CF

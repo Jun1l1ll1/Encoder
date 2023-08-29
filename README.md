@@ -134,3 +134,5 @@ J: <b style="color:red">Mohohaha</b>
 J: <span style="font-family: wingdings; text-decoration: underline;">Hva med dette?</span>
 
 I: Nope lol
+
+J: J<b>a</b><u>j</u>*a*..

@@ -143,8 +143,8 @@ I: <a>a</a> <b>b</b> <c>c</c> <d>d</d> <e>e</e> <f>f</f> <g>g</g> <h>h</h> <i>i<
 <b>J:</b> <s>Nice</s> Epic!
 
 I: So to sum it up <br>
-B: <b> Does this </b>
-I: <i> Does this </i>
-P: <p> Does this </p>
-Q: <q> Does this </q>
-S: <s> Does this </s>
+B: <b> Does this </b><br>
+I: <i> Does this </i><br>
+P: <p> Does this </p><br>
+Q: <q> Does this </q><br>
+S: <s> Does this </s><br>

@@ -123,3 +123,6 @@ J: J9y9yqyq
 I: My master plan! MYAHAHAHAHAHAHAHA
 
 J: XD Skal teste noe: <br>J: Hei <br>J: det fungerte
+
+I: Oh~ <br>
+I: Epic

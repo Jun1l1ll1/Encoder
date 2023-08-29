@@ -126,3 +126,5 @@ J: XD Skal teste noe: <br>J: Hei <br>J: det fungerte
 
 I: Oh~ <br>
 I: Epic
+
+J: <b style="color:red">Mohohaha</b>

@@ -111,8 +111,7 @@ I: Yaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaasssssssssssssssssss!!!!!!!!!!!!!!!!
 
 J: 5¤#(% 31, 6$1 {#3 3#%%# 31§
 
-I: no
-
+I: no <br>
 I: 11:11
 
 J: Tbehf
@@ -123,4 +122,4 @@ J: J9y9yqyq
 
 I: My master plan! MYAHAHAHAHAHAHAHA
 
-J: XD Skal teste noe: <br>Hei
+J: XD Skal teste noe: <br>J: Hei <br>J: det fungerte

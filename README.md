@@ -104,3 +104,5 @@ I: Yjod od jptonør yjpihj
 J: Øoyy vitdrf sy bo o TRSF;R goørm CF
 
 I: Know what, fuck this, my brain can't take this shit XD
+
+J: Mppppppppppppppppppppppppppppppppppppp""""""

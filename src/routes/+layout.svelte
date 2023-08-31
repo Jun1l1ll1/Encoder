@@ -1,3 +1,3 @@
 
-<a href="/">Home</a><a href="/morse">Morse</a>
+<a href="/">Home </a><a href="/morse">Morse</a>
 <slot/>

@@ -1,4 +1,3 @@
-<!-- Ignore warning for now -->
 
+<a href="/">Home</a><a href="/morse">Morse</a>
 <slot/>
-<h1>hei</h1>

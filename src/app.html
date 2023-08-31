@@ -2,6 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
+		<link rel="stylesheet" href="https://use.typekit.net/ufq4weg.css">
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		%sveltekit.head%
@@ -9,4 +10,22 @@
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>
 	</body>
+
+	<style>
+		body, html {
+			background-color: rgb(23, 21, 24);
+			color: white;
+			font-family: 'input-mono', monospace, Calibri, 'Trebuchet MS', sans-serif;
+		}
+		
+		/* a { 
+			text-decoration: none;
+		} */
+		a:link, a:visited, a:active { /* unvisited, visited, selected link */
+			color: #00FF62;
+		}
+		a:hover { /* mouse over link */
+			color: white;
+		}
+	</style>
 </html>

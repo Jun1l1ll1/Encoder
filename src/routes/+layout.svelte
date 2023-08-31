@@ -1,3 +1,15 @@
+<script>
 
-<a href="/">Home </a><a href="/morse">Morse</a>
-<slot/>
+    import Navbar from "$lib/components/Navbar.svelte";
+
+</script>
+
+<div style="display: flex;">
+    <Navbar/> 
+
+    <div style="padding: 25px;">
+        <slot/>
+    </div>
+
+</div>
+

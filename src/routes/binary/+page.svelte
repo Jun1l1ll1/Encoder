@@ -3,18 +3,34 @@
     output = chypher
  -->
 
+<div class="title">
+    <h1>Binary converter</h1>
+</div>
+
 <div class="input br">
+    <h2>Normal</h2>
     <textarea class="input_input br bc_gray" id="input_text" rows="5" cols="33">Normal text</textarea>
     <button onclick="document.getElementById('input_text').value=''" class="input_del br" >Clear</button>
 </div>
 
+<div class="change br bc_color">
+    <button class="change_btn br bc_color"></button>
+</div>
+
 <div class="output br">
+    <h2>Binary</h2>
     <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">Binary</textarea>
     <button onclick="document.getElementById('output_text').value=''" class="output_del br">Clear</button>
 
 </div>
 
 <style>
+    .title {
+        position: absolute;
+        top: 50px;
+        left: 500px;
+    }
+
     .input {
         height: 200px;
         width: 400px;
@@ -44,6 +60,24 @@
         background-color: tomato;
     } .input_del:active {
         background-color: red;
+    }
+
+    .change {
+        width: 50px;
+        height: 50px;
+        position: absolute;
+        top: 280px;
+        left: 655px;
+    }
+
+    .change_btn {
+        width: 50px;
+        height: 50px;
+        border: none;
+    } .change_btn:hover {
+        background-color: lightgreen;
+    } .change_btn:active {
+        background-color: #00FF62;
     }
 
     .output {

@@ -1,14 +1,14 @@
 <div class="input br bc_gray">
-    <input type="text" class="input_input br bc_gray">
+    <input type="text" class="input_input br bc_gray" id="input_text">
     
 </div>
-<button class="input_del br">Delete input</button>
+<button onclick="document.getElementById('input_text').value=''" class="input_del br" >Delete input</button>
 
 <div class="output br bc_gray">
-    <input type="text" class="output_input br bc_gray">
+    <input type="text" class="output_input br bc_gray" id="output_text">
 
 </div>
-<button class="output_del br">Delete output</button>
+<button onclick="document.getElementById('output_text').value=''" class="output_del br">Delete output</button>
 
 <style>
     .input {
@@ -24,6 +24,7 @@
         width: 400px;
         border: none;
         color: white;
+        font-family: "input-mono";
     }
 
     .input_del {
@@ -48,6 +49,7 @@
         width: 400px;
         border: none;
         color: white;
+        font-family: "input-mono";
     }
 
     .output_del {

@@ -1,11 +1,11 @@
 <div class="input br bc_gray">
-    <input type="text" class="input_input br bc_gray" id="input_text">
+    <textarea class="input_input br bc_gray" id="input_text" rows="5" cols="33">test</textarea>
     
 </div>
 <button onclick="document.getElementById('input_text').value=''" class="input_del br" >Delete input</button>
 
 <div class="output br bc_gray">
-    <input type="text" class="output_input br bc_gray" id="output_text">
+    <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">test</textarea>
 
 </div>
 <button onclick="document.getElementById('output_text').value=''" class="output_del br">Delete output</button>
@@ -34,6 +34,10 @@
         top: 360px;
         left: 500px;
         border: none;
+    } .input_del:hover {
+        background-color: tomato;
+    } .input_del:active {
+        background-color: red;
     }
 
     .output {
@@ -50,6 +54,10 @@
         border: none;
         color: white;
         font-family: "input-mono";
+    } .output_del:hover {
+        background-color: tomato;
+    } .output_del:active {
+        background-color: red;
     }
 
     .output_del {

@@ -7,7 +7,7 @@
 <div style="display: flex;">
     <Navbar/> 
 
-    <div style="padding: 25px;">
+    <div style="width:100%;">
         <slot/>
     </div>
 

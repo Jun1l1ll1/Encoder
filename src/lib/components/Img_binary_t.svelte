@@ -19,5 +19,6 @@
         glyph-orientation-vertical: 0deg;
         text-orientation: upright;
         writing-mode: tb;
+        user-select: none;
     }
 </style>

@@ -1,42 +1,68 @@
+<script>
+    import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
+
+</script>
 <!-- 
     input = normal text
     output = chypher
- -->
+-->
 
-<div class="title">
-    <h1>Binary converter</h1>
+
+<div class="center">
+    <ImgBinaryT/>
+
+    <h1 class="title front">Binary converter</h1>
+
+    <div class="input_grid_cont front">
+
+        <div class="input br">
+            <h2>Text</h2>
+            <textarea class="input_input br bc_gray" id="input_text" rows="5" cols="33">Text</textarea>
+            <button onclick="document.getElementById('input_text').value=''" class="input_del br" >Clear</button>
+        </div>
+        
+        <div class="change_box br">
+            <button class="change_btn br bc_color"></button>
+        </div>
+        
+        <div class="output br">
+            <h2>Binary</h2>
+            <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">01000010 01101001 01101110 01100001 01110010 01111001 </textarea>
+            <button onclick="document.getElementById('output_text').value=''" class="output_del br">Clear</button>
+        </div>
+    </div>
+    
 </div>
 
-<div class="input br">
-    <h2>Text</h2>
-    <textarea class="input_input br bc_gray" id="input_text" rows="5" cols="33">Text</textarea>
-    <button onclick="document.getElementById('input_text').value=''" class="input_del br" >Clear</button>
-</div>
-
-<div class="change br bc_color">
-    <button class="change_btn br bc_color"></button>
-</div>
-
-<div class="output br">
-    <h2>Binary</h2>
-    <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">01000010 01101001 01101110 01100001 01110010 01111001 </textarea>
-    <button onclick="document.getElementById('output_text').value=''" class="output_del br">Clear</button>
-
-</div>
 
 <style>
-    .title {
+    .front {
+        z-index: 1;
+    }
+
+    .center {
+        width: calc(100% - 71px);
+        height: 100%;
         position: absolute;
-        top: 50px;
-        left: 500px;
+        /* border: 1px red solid; */
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input_grid_cont {
+        display:grid; 
+        grid-template-columns: auto auto auto;
+    }
+
+    .title {
+        margin-top: 75px;
     }
 
     .input {
-        height: 200px;
         width: 400px;
-        position: absolute;
-        top: 150px;
-        left: 200px;
+        height: 300px;
+        position: relative;
     }
 
     .input_input {
@@ -62,12 +88,12 @@
         background-color: red;
     }
 
-    .change {
-        width: 50px;
-        height: 50px;
-        position: absolute;
-        top: 280px;
-        left: 655px;
+    .change_box {
+        width: 100px;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
     .change_btn {
@@ -81,11 +107,9 @@
     }
 
     .output {
-        height: 200px;
         width: 400px;
-        position: absolute;
-        top: 150px;
-        right: 200px;
+        height: 300px;
+        position: relative;
     }
 
     .output_input {

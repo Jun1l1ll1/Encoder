@@ -8,8 +8,8 @@
 </div>
 
 <div class="input br">
-    <h2>Normal</h2>
-    <textarea class="input_input br bc_gray" id="input_text" rows="5" cols="33">Normal text</textarea>
+    <h2>Text</h2>
+    <textarea class="input_input br bc_gray" id="input_text" rows="5" cols="33">Text</textarea>
     <button onclick="document.getElementById('input_text').value=''" class="input_del br" >Clear</button>
 </div>
 
@@ -19,7 +19,7 @@
 
 <div class="output br">
     <h2>Binary</h2>
-    <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">Binary</textarea>
+    <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">01000010 01101001 01101110 01100001 01110010 01111001 </textarea>
     <button onclick="document.getElementById('output_text').value=''" class="output_del br">Clear</button>
 
 </div>

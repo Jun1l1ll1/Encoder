@@ -1,15 +1,25 @@
 <script>
     import ImgBinaryB from "$lib/components/Img_binary_b.svelte";
     import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
-
     import ImgClear from "$lib/assets/delete.png";
+  
+
+    var input ="Text";
+    var output = "01010100 01100101 01111000 01110100";
+
+    function convert(){
+        output = "";
+        for (var i = 0; i < input.length; i++) {
+            output += input[i].charCodeAt(0).toString(2) + " ";
+        }
+    }
+
 
 </script>
 <!-- 
     input = normal text
     output = chypher
 -->
-
 
 <div class="center">
     <ImgBinaryT/>
@@ -21,18 +31,22 @@
 
         <div class="input br">
             <h2>Text</h2>
-            <textarea class="input_input br bc_gray" id="input_text" rows="5" cols="33">Text</textarea>
+
+            <textarea bind:value={input} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
+
         </div>
         
         <div class="change_box br">
-            <button class="change_btn br bc_color"></button>
+            <button class="change_btn br bc_color" on:click={convert}></button>
         </div>
         
         <div class="output br">
             <h2>Binary</h2>
-            <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">01010100 01100101 01111000 01110100</textarea>
+
+            <textarea bind:value={output} class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button>
+
         </div>
     </div>
     

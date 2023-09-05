@@ -1,6 +1,8 @@
 <script>
     import ImgBinaryB from "$lib/components/Img_binary_b.svelte";
     import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
+    import ImgClear from "$lib/assets/delete.png";
+  
 
     var input ="Text";
     var output = "01010100 01100101 01111000 01110100";
@@ -11,6 +13,7 @@
             output += input[i].charCodeAt(0).toString(2) + " ";
         }
     }
+
 
 </script>
 <!-- 
@@ -28,8 +31,10 @@
 
         <div class="input br">
             <h2>Text</h2>
+
             <textarea bind:value={input} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
-            <button onclick="document.getElementById('input_text').value=''" class="input_del br" >Clear</button>
+            <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
+
         </div>
         
         <div class="change_box br">
@@ -38,8 +43,10 @@
         
         <div class="output br">
             <h2>Binary</h2>
+
             <textarea bind:value={output} class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
-            <button onclick="document.getElementById('output_text').value=''" class="output_del br">Clear</button>
+            <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button>
+
         </div>
     </div>
     
@@ -72,7 +79,7 @@
 
     .input {
         width: 400px;
-        height: 300px;
+        height: fit-content;
         position: relative;
     }
 
@@ -87,16 +94,18 @@
         font-family: "input-mono";
     }
 
-    .input_del {
-        height: 20px;
-        background-color: red;
+    .del_btn {
+        padding: 5px;
         position: absolute;
-        right: 10px; 
+        left: 10px;
+        bottom: 10px;
         border: none;
-    } .input_del:hover {
-        background-color: tomato;
-    } .input_del:active {
-        background-color: red;
+        transition: .25s;
+        background-color: rgba(0,0,0,0);
+    } .del_btn:hover {
+        background-color: rgb(163, 8, 41);
+    } .del_btn:active {
+        background-color: rgb(92, 0, 23);
     }
 
     .change_box {
@@ -119,7 +128,7 @@
 
     .output {
         width: 400px;
-        height: 300px;
+        height: fit-content;
         position: relative;
     }
 
@@ -133,16 +142,4 @@
         color: white;
         font-family: "input-mono";
     } 
-
-    .output_del {
-        height: 20px;
-        background-color: red;
-        position: absolute;
-        left: 10px;
-        border: none;
-    } .output_del:hover {
-        background-color: tomato;
-    } .output_del:active {
-        background-color: red;
-    }
 </style>

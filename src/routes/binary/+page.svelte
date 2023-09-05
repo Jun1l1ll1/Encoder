@@ -27,7 +27,7 @@
         
         <div class="output br">
             <h2>Binary</h2>
-            <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">01000010 01101001 01101110 01100001 01110010 01111001 </textarea>
+            <textarea class="output_input br bc_gray" id="output_text" rows="5" cols="33">01010100 01100101 01111000 01110100</textarea>
             <button onclick="document.getElementById('output_text').value=''" class="output_del br">Clear</button>
         </div>
     </div>

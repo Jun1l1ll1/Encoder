@@ -1,5 +1,6 @@
 <script>
-    import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
+    import ImgBinaryB from "$lib/components/Img_binary_b.svelte";
+import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
 
 </script>
 <!-- 
@@ -10,6 +11,7 @@
 
 <div class="center">
     <ImgBinaryT/>
+    <ImgBinaryB/>
 
     <h1 class="title front">Binary converter</h1>
 

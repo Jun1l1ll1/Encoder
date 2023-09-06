@@ -1,7 +1,7 @@
 <script>
     import ImgBinaryB from "$lib/components/Img_binary_b.svelte";
     import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
-    import ImgClear from "$lib/assets/delete.png";
+    import ImgClear from "$lib/assets/trash.svg";
   
 
     var input ="Text";

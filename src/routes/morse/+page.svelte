@@ -1,6 +1,6 @@
 <script>
 
-    import ImgClear from "$lib/assets/delete.png";
+    import ImgClear from "$lib/assets/trash.svg";
 
     let normal_inp = "Hei";
     let morse_inp = ".... . ..";

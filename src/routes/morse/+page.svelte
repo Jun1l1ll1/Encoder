@@ -2,8 +2,8 @@
 
     import ImgClear from "$lib/assets/trash.svg";
 
-    let normal_inp = "Hei";
-    let morse_inp = ".... . ..";
+    let normal_inp = "Convert whatever you want!";
+    let morse_inp = "-.-. --- -. ...- . .-. -  .-- .... .- - . ...- . .-.  -.-- --- ..-  .-- .- -. - -.-.--";
 
     let change_to_morse = true;
 

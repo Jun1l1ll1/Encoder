@@ -113,6 +113,14 @@
         background-color: rgb(92, 0, 23);
     }
 
+
+    .dir_btn {
+        border: none;
+        background-color: rgba(0,0,0,0);
+        color: white;
+        font-size: large;
+    }
+    
     .change_box {
         width: 100px;
         height: 100%;

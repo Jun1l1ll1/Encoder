@@ -43,7 +43,7 @@
         
         <div class="change_box br">
             <button class="change_btn br bc_color" on:click={convert}></button>
-            <button on:click={swap_dir} class="dir_btn br">{#if change_to_morse}-&gt;{:else}&lt;-{/if}</button>
+            <button on:click={swap_dir} class="dir_btn br">-&gt;</button>
         </div>
         
         <div class="output br">

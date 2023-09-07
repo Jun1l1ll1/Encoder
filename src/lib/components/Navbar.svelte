@@ -6,6 +6,7 @@
         <a href="/" class="element">home</a>
         <a href="/binary" class="element">binary</a>
         <a href="/morse" class="element">morse</a>
+        <a href="/ceasar" class="element">ceasar</a>
     </div>
 </div>
 

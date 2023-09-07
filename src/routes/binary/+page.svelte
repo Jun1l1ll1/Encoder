@@ -7,15 +7,33 @@
     var input ="Text";
     var output = "01010100 01100101 01111000 01110100";
 
-    function convert(){
+    var change_to_binary = true;
+
+    function to_binary() {
         output = "";
         for (var i = 0; i < input.length; i++) {
-            output += input[i].charCodeAt(0).toString(2) + " ";
+            output += (0b100000000 + input[i].charCodeAt(0)).toString(2).substring(1) + " ";
         }
+    }
+
+    function normal(output) {
+        var bin_string = "";
+
+        output.split(" ").map(function(bin) {
+            bin_string += String.fromCharCode(parseInt(bin, 2));
+        });
+        return bin_string;
+    }
+
+    function to_norm() {
+        input = ""
+        input = normal(output)
     }
 
     function swap_dir() {
         console.log("Swap")
+        console.log(normal(output))
+        change_to_binary = !change_to_binary
     }
 
 
@@ -42,8 +60,8 @@
         </div>
         
         <div class="change_box br">
-            <button class="change_btn br bc_color" on:click={convert}></button>
-            <button on:click={swap_dir} class="dir_btn br">-&gt;</button>
+            <button class="change_btn br bc_color" on:click={() => {change_to_binary ? to_binary() : to_norm()}}></button>
+            <button on:click={swap_dir} class="dir_btn br">{#if change_to_binary}-&gt;{:else}&lt;-{/if}</button>
         </div>
         
         <div class="output br">

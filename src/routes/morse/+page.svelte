@@ -40,13 +40,41 @@
         z: "--..",
         æ: ".-.-",
         ø: "---.",
-        å: ".--.-"
+        å: ".--.-",
+        1: ".----",
+        2: "..---",
+        3: "...--",
+        4: "....-",
+        5: ".....",
+        6: "-....",
+        7: "--...",
+        8: "---..",
+        9: "----.",
+        0: "-----",
+        ".": ".-.-.-",
+        "?": "..--..",
+        "!": "-.-.--",
+        ",": "--..--",
+        ";": "-.-.-.",
+        ":": "---...",
+        "+": ".-.-.",
+        "-": "-....-",
+        "/": "-..-.",
+        "=": "-...-",
+        "\"": ".-..-.",
+        "@": ".--.-.",
+        "$": "...-..-",
+        "_": "..--.-"
     }
 
     function to_morse() {
         let out = "";
         for (let i = 0; i < normal_inp.length; i++) {
-            out += norm_to_morse[normal_inp[i].toLocaleLowerCase()] + " ";
+            if (normal_inp[i] == " ") {
+                out += " ";
+            } else {
+                out += norm_to_morse[normal_inp[i].toLocaleLowerCase()] + " ";
+            }
         }
         morse_inp = out;
     }
@@ -55,7 +83,9 @@
         let morse_list = morse_inp.split(" ")
         let out = "";
         for (let i = 0; i < morse_list.length; i++) {
-            if (morse_list[i] != "") {
+            if (morse_list[i] == "") {
+                out += " "
+            } else {
                 out += get_key_by_value(norm_to_morse, morse_list[i]);
             }
         }

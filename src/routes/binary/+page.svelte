@@ -1,7 +1,7 @@
 <script>
     import ImgBinaryB from "$lib/components/Img_binary_b.svelte";
     import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
-    import ImgClear from "$lib/assets/trash.svg";
+    import ImgClear from "$lib/assets/delete.png";
   
 
     var input ="Text";
@@ -14,7 +14,11 @@
         }
     }
 
- 
+    function swap_dir() {
+        console.log("Swap")
+    }
+
+
 </script>
 <!-- 
     input = normal text
@@ -39,6 +43,7 @@
         
         <div class="change_box br">
             <button class="change_btn br bc_color" on:click={convert}></button>
+            <button on:click={swap_dir} class="dir_btn br">{#if change_to_morse}-&gt;{:else}&lt;-{/if}</button>
         </div>
         
         <div class="output br">

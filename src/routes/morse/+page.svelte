@@ -190,6 +190,10 @@
         background-color: rgba(0,0,0,0);
         color: white;
         font-size: large;
+        transition: .25s;
+        margin-top: 10px;
+    } .dir_btn:hover {
+        background-color: #00FF62;
     }
 
     .change_box {

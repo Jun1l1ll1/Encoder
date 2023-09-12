@@ -1,20 +1,47 @@
 <script>
     import ImgClear from "$lib/assets/trash.svg";
 
-    let normal_inp = "ABC";
-    let ceasar_inp = "BCD";
+    const ALPHABETH = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
+
+    let input_text = "Convert whatever you want!";
+    let output_text = "Eqpxgtv yjcvgxgt aqw ycpv!";
 
     let change_to_ceasar = true;
     let shift_dir = "right";
     let shift_number = 2;
+    let useÆØÅ = false;
 
     function shift() {
         let nr = shift_dir == "right" ? shift_number : -shift_number;
+        let alph_len = useÆØÅ ? 29 : 26;
+
+        let new_text = "";
+        for (let i = 0; i < input_text.length; i++) {
+            if (ALPHABETH.indexOf(input_text[i].toUpperCase()) == -1) { // Not in the alphabeth
+                new_text += input_text[i];
+            }
+            else { // In the alphabeth
+                let new_index = ALPHABETH.indexOf(input_text[i].toUpperCase()) + nr;
+                if (new_index >= alph_len) { // Greater than the alphabeth
+                    new_index -= alph_len;
+                } else if (new_index < 0) { // Lower than the alphabeth
+                    new_index += alph_len;
+                }
+
+                if (input_text[i] == input_text[i].toUpperCase()) { // Is upper case
+                    new_text += ALPHABETH[new_index];
+                } else { // Is lower case
+                    new_text += ALPHABETH[new_index].toLowerCase();
+                }
+            }
+        }
+        
+        output_text = new_text;
     }
 
-    function swap_dir() {
-        change_to_ceasar = !change_to_ceasar;
-    }
+    // function swap_dir() {
+    //     change_to_ceasar = !change_to_ceasar;
+    // }
 </script>
 
 <div class="center">
@@ -34,29 +61,33 @@
                 <legend>Shift amount</legend>
                 <input bind:value={shift_number} class="br bc_dark" style="border: none; padding: 5px; color:#00FF62;" type="number" placeholder="2">
             </fieldset>
+            <fieldset class="br bc_dark_gray">
+                <legend>ÆØÅ?</legend>
+                <input bind:checked={useÆØÅ} type="checkbox" id="ÆØÅ"><label for="ÆØÅ">Use "æøå"</label>
+            </fieldset>
         </div>
 
     
         <div class="input_grid_cont front">
     
             <div class="input br">
-                <h2>Text</h2>
+                <h2>Input</h2>
     
-                <textarea bind:value={normal_inp} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
+                <textarea bind:value={input_text} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
                 <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
     
             </div>
             
             <div class="change_box br">
                 <button class="change_btn br bc_color" on:click={shift}></button>
-                <button on:click={swap_dir} class="dir_btn br">-&gt;</button>
+                <button class="dir_btn br">-&gt;</button>
             </div>
             
             <div class="output br">
-                <h2>Binary</h2>
+                <h2>Output</h2>
     
-                <textarea bind:value={ceasar_inp} class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
-                <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button>
+                <textarea bind:value={output_text} class="output_input br bc_dark_gray" id="output_text" rows="5" cols="33" readonly></textarea>
+                <!-- <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button> -->
     
             </div>
         </div>
@@ -85,13 +116,15 @@
         margin-top: 25px;
         padding: 10px;
         width: fit-content;
+        display: flex;
     }
     .options_box fieldset {
         border: none;
+        margin-right: 50px;
     }
-     input[type="radio"] {
-        accent-color: #00FF62;
-     }
+    input[type="radio"], input[type="checkbox"] {
+    accent-color: #00FF62;
+    }
 
 
     .input_grid_cont {
@@ -140,6 +173,8 @@
         background-color: rgba(0,0,0,0);
         color: white;
         font-size: large;
+        transition: .25s;
+        margin-top: 10px;
     }
     
     .change_box {

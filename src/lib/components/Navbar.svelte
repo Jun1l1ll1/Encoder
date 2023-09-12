@@ -6,9 +6,9 @@
     <div class="grid">
         <div style="height: 100px;" class="bc_dark_gray"></div>
 
-        <a href="/" class="element"><Icons cypher="binary"/></a>
+        <a href="/" class="element"><Icons cypher="home"/></a>
         <a href="/binary" class="element"><Icons cypher="binary"/></a>
-        <a href="/morse" class="element"><Icons cypher="binary"/></a>
+        <a href="/morse" class="element"><Icons cypher="morse"/></a>
         <a href="/ceasar" class="element"><Icons cypher="binary"/></a>
     </div>
 </div>

@@ -6,7 +6,7 @@
     let input_text = "Convert whatever you want!";
     let output_text = "Eqpxgtv yjcvgxgt aqw ycpv!";
 
-    let change_to_ceasar = true;
+    // let change_to_ceasar = true;
     let shift_dir = "right";
     let shift_number = 2;
     let useÆØÅ = false;
@@ -46,7 +46,7 @@
 
 <div class="center">
 
-    <h1 class="title front">Ceasar Cypher Converter</h1>
+    <h1 class="title front">Caesar Cipher Converter</h1>
 
     <div>
         <div class="options_box br">

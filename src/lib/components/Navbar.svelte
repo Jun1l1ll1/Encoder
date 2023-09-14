@@ -14,6 +14,7 @@
             <a href="/binary" class="element"><Icons cypher="binary" path={$page.url.pathname}/></a>
             <a href="/morse" class="element"><Icons cypher="morse" path={$page.url.pathname}/></a>
             <a href="/caesar" class="element"><Icons cypher="caesar" path={$page.url.pathname}/></a>
+            <a href="/a1z26" class="element"><Icons cypher="a1z26" path={$page.url.pathname}/></a>
         </div>
     </div>
 </div>

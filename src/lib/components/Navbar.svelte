@@ -9,7 +9,7 @@
         <a href="/" class="element"><Icons cypher="home"/></a>
         <a href="/binary" class="element"><Icons cypher="binary"/></a>
         <a href="/morse" class="element"><Icons cypher="morse"/></a>
-        <a href="/ceasar" class="element"><Icons cypher="binary"/></a>
+        <a href="/caesar" class="element"><Icons cypher="caesar"/></a>
     </div>
 </div>
 

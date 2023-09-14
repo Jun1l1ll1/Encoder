@@ -25,7 +25,9 @@
         </div>
         {/each}
     </div>
-    
+
+    <!-- The ability to scroll further down than the elements -->
+    <div style="margin-top: 100px; opacity: 0;">.</div>
 </div>
 
 
@@ -47,6 +49,7 @@
     .title {
         margin-top: 75px;
     }
+
 
     .grid {
         display:grid; 

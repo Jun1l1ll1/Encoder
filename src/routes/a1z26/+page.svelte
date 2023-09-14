@@ -49,21 +49,7 @@
         7: "number",
         8: "number",
         9: "number",
-        0: "number",
-        // ".": ".-.-.-",
-        // "?": "..--..",
-        // "!": "-.-.--",
-        // ",": "--..--",
-        // ";": "-.-.-.",
-        // ":": "---...",
-        // "+": ".-.-.",
-        // "-": "-....-",
-        // "/": "-..-.",
-        // "=": "-...-",
-        // "\"": ".-..-.",
-        // "@": ".--.-.",
-        // "$": "...-..-",
-        // "_": "..--.-"
+        0: "number"
     }
 
     function to_a1z26() {
@@ -71,6 +57,8 @@
         for (let i = 0; i < input.length; i++) {
             if (input[i] == " ") {
                 out += " ";
+            } else if ((norm_to_a1z26[input[i].toLocaleLowerCase()]) == undefined){
+                out += input[i] + " ";
             } else {
                 out += norm_to_a1z26[input[i].toLocaleLowerCase()] + " ";
             }
@@ -84,12 +72,27 @@
         for (let i = 0; i < a1z26_list.length; i++) {
             if (a1z26_list[i] == "") {
                 out += " "
+            } else if ((get_key_by_value(norm_to_a1z26, a1z26_list[i])) == undefined){
+                out += a1z26_list[i]
             } else {
                 out += get_key_by_value(norm_to_a1z26, a1z26_list[i]);
             }
         }
         input = out;
     }
+
+    // function to_norm() {
+    //     let a1z26_list = output.split(" ")
+    //     let out = "";
+    //     for (let i = 0; i < a1z26_list.length; i++) {
+    //         if (a1z26_list[i] == "") {
+    //             out += " "
+    //         } else {
+    //             out += get_key_by_value(norm_to_a1z26, a1z26_list[i]);
+    //         }
+    //     }
+    //     input = out;
+    // }
 
     function swap_dir() {
         change_to_a1z26 = !change_to_a1z26;

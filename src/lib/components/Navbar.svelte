@@ -1,15 +1,18 @@
 <script>
+    import { page } from '$app/stores';
+
     import Icons from "$lib/components/Icons.svelte";
+    
 </script>
 
 <div class="outer bc_gray">
     <div class="grid">
         <div style="height: 100px;" class="bc_dark_gray"></div>
 
-        <a href="/" class="element"><Icons cypher="home"/></a>
-        <a href="/binary" class="element"><Icons cypher="binary"/></a>
-        <a href="/morse" class="element"><Icons cypher="morse"/></a>
-        <a href="/caesar" class="element"><Icons cypher="caesar"/></a>
+        <a href="/" class="element"><Icons cypher="" path={$page.url.pathname}/></a>
+        <a href="/binary" class="element"><Icons cypher="binary" path={$page.url.pathname}/></a>
+        <a href="/morse" class="element"><Icons cypher="morse" path={$page.url.pathname}/></a>
+        <a href="/caesar" class="element"><Icons cypher="caesar" path={$page.url.pathname}/></a>
     </div>
 </div>
 

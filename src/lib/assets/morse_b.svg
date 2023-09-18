@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Morse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496.36 470.18">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #00ff62;
+        font-family: InputMono-Regular, 'Input Mono';
+        font-size: 30px;
+      }
+    </style>
+  </defs>
+  <g id="Bottom">
+    <text class="cls-1" transform="translate(496.36 25.91) rotate(-180) scale(1 -1)"><tspan x="0" y="0">-- </tspan><tspan x="0" y="36">--- .-. ... </tspan><tspan x="0" y="72" xml:space="preserve">.  -- --- .-. </tspan><tspan x="0" y="108" xml:space="preserve">... .  -- --- .-. </tspan><tspan x="0" y="144" xml:space="preserve">... .  -- </tspan><tspan x="0" y="180" xml:space="preserve">--- .-. ... .  </tspan><tspan x="0" y="216" xml:space="preserve">-- --- .-. ... .  -- </tspan><tspan x="0" y="252" xml:space="preserve">--- .-. ... .  -- </tspan><tspan x="0" y="288" xml:space="preserve">--- .-. ... .  -- --- </tspan><tspan x="0" y="324" xml:space="preserve">.-. ... .  -- --- </tspan><tspan x="0" y="360" xml:space="preserve">.-. ... .  -- --- .-. </tspan><tspan x="0" y="396" xml:space="preserve">... .  -- --- .-. </tspan><tspan x="0" y="432" xml:space="preserve">... .  -- --- .-. ... .   </tspan></text>
+  </g>
+</svg>

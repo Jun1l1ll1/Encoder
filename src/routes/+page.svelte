@@ -6,6 +6,7 @@
         "Morse": {"icon":"morse", "txt":"-- --- .-. ... .  -.-. --- -.. ."},
         "Caesar Cipher": {"icon":"caesar", "txt":"Eqpxgtv cpavjkpi vq ecguct ekrjgt"},
         "a1z26": {"icon":"a1z26", "txt":"3 15 14 22 5 18 20  20 5 24 20  20 15  14 21 13 2 5 18 19"},
+        "Atbash": {"icon":"atbash", "txt":"Xlmevig gvcg drgs Zgyzhs xrksvi"},
     }
 
 </script>

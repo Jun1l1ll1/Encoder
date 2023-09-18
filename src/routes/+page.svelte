@@ -1,4 +1,6 @@
 <script>
+    import { goto } from '$app/navigation';
+
     import Icons from "$lib/components/Icons.svelte";
 
     let ciphers = {
@@ -22,7 +24,7 @@
             <h3 class="cipher_title">{cipher}</h3>
             <div class="cipher_text">{ciphers[cipher]["txt"]}</div>
             <div class="cipher_icon"><Icons cypher={ciphers[cipher]["icon"]} color="#00FF62" is_static=true/></div>
-            <button class="go_to_btn br bc_color">&lt;</button>
+            <button on:click={() => {goto("/"+ciphers[cipher]["icon"])}} class="go_to_btn br bc_color"><b>Go to</b></button>
         </div>
         {/each}
     </div>

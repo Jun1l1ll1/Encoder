@@ -1,5 +1,5 @@
 <script>
-
+    import ImgMorseT from "$lib/components/Img_morse_t.svelte";
     import ImgClear from "$lib/assets/trash.svg";
 
     let normal_inp = "Convert whatever you want!";
@@ -104,6 +104,7 @@
 
 
 <div class="center">
+    <ImgMorseT/>
 
     <h1 class="title front">Morse converter</h1>
 
@@ -136,7 +137,7 @@
     }
 
     .center {
-        width: calc(100% - 71px);
+        width: calc(100% - 71px); 
         height: 100%;
         position: absolute;
         /* border: 1px red solid; */

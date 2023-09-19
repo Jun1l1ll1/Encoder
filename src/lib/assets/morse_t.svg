@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg id="Morse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 744.53 470.18">
+<svg id="Morse" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1366 768">
   <defs>
     <style>
       .cls-1 {
@@ -10,6 +10,6 @@
     </style>
   </defs>
   <g id="Top3">
-    <text class="cls-1" transform="translate(0 25.91)"><tspan x="0" y="0" xml:space="preserve">-- --- .-. ... .  -- --- .-. ... .  -- </tspan><tspan x="0" y="36" xml:space="preserve">--- .-. ... .  -- --- .-. </tspan><tspan x="0" y="72" xml:space="preserve">... .  -- --- .-. ... .  -- </tspan><tspan x="0" y="108" xml:space="preserve">--- .-. ... .  -- </tspan><tspan x="0" y="144" xml:space="preserve">--- .-. ... .  -- --- .-. ... </tspan><tspan x="0" y="180" xml:space="preserve">.  -- --- .-. ... .  -- --- .-. ... .  </tspan><tspan x="0" y="216" xml:space="preserve">-- --- .-. ... .  </tspan><tspan x="0" y="252">-- --- </tspan><tspan x="0" y="288" xml:space="preserve">.-. ... .  -- </tspan><tspan x="0" y="324" xml:space="preserve">--- .-. ... .  -- --- </tspan><tspan x="0" y="360" xml:space="preserve">.-. ... .  </tspan><tspan x="0" y="396">-- --- .-. </tspan><tspan x="0" y="432" xml:space="preserve">... .  </tspan></text>
+    <text class="cls-1" transform="translate(14.05 27.5)"><tspan x="0" y="0" xml:space="preserve">-- --- .-. ... .  -- --- .-. ... .  -- </tspan><tspan x="0" y="36" xml:space="preserve">--- .-. ... .  -- --- .-. </tspan><tspan x="0" y="72" xml:space="preserve">... .  -- --- .-. ... .  -- </tspan><tspan x="0" y="108" xml:space="preserve">--- .-. ... .  -- </tspan><tspan x="0" y="144" xml:space="preserve">--- .-. ... .  -- --- .-. ... </tspan><tspan x="0" y="180" xml:space="preserve">.  -- --- .-. ... .  -- --- .-. ... .  </tspan><tspan x="0" y="216" xml:space="preserve">-- --- .-. ... .  </tspan><tspan x="0" y="252">-- --- </tspan><tspan x="0" y="288" xml:space="preserve">.-. ... .  -- </tspan><tspan x="0" y="324" xml:space="preserve">--- .-. ... .  -- --- </tspan><tspan x="0" y="360" xml:space="preserve">.-. ... .  </tspan><tspan x="0" y="396">-- --- .-. </tspan><tspan x="0" y="432" xml:space="preserve">... .  </tspan></text>
   </g>
 </svg>

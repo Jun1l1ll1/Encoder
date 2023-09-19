@@ -1,5 +1,6 @@
 <script>
     import ImgClear from "$lib/assets/trash.svg";
+    import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
     const ALPHABETH = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
 
@@ -80,7 +81,7 @@
             
             <div class="change_box br">
                 <button class="change_btn br bc_color" on:click={shift}></button>
-                <button class="dir_btn br">-&gt;</button>
+                <button class="dir_btn br"><ChangeDirArrow/></button>
             </div>
             
             <div class="output br">

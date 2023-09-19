@@ -1,5 +1,6 @@
 <script>
     import { goto } from '$app/navigation';
+    import ChangeDirArrow from '$lib/components/Change_dir_arrow.svelte';
 
     import Icons from "$lib/components/Icons.svelte";
 
@@ -24,7 +25,7 @@
             <h3 class="cipher_title">{cipher}</h3>
             <div class="cipher_text">{ciphers[cipher]["txt"]}</div>
             <div class="cipher_icon"><Icons cypher={ciphers[cipher]["code"]} color="#00FF62" is_static=true/></div>
-            <button on:click={() => {goto("/"+ciphers[cipher]["code"])}} class="go_to_btn br bc_color"><b>Go to</b></button>
+            <button on:click={() => {goto("/"+ciphers[cipher]["code"])}} class="go_to_btn br bc_color"><ChangeDirArrow right={false} color="black"/></button>
         </div>
         {/each}
     </div>

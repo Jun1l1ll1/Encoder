@@ -2,6 +2,7 @@
     import ImgMorseT from "$lib/components/Img_morse_t.svelte";
     import ImgMorseB from "$lib/components/Img_morse_b.svelte";
     import ImgClear from "$lib/assets/trash.svg";
+    import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
     let normal_inp = "Convert whatever you want!";
     let morse_inp = "-.-. --- -. ...- . .-. -  .-- .... .- - . ...- . .-.  -.-- --- ..-  .-- .- -. - -.-.--";
@@ -120,7 +121,7 @@
         
         <div class="change_box br">
             <button on:click={() => {change_to_morse ? to_morse() : to_norm()}} class="change_btn br bc_color"></button>
-            <button on:click={swap_dir} class="dir_btn br">{#if change_to_morse}-&gt;{:else}&lt;-{/if}</button>
+            <button on:click={swap_dir} class="dir_btn br"><ChangeDirArrow right={change_to_morse}/></button>
         </div>
         
         <div class="output br">

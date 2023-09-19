@@ -1,5 +1,6 @@
 <script>
     import ImgMorseT from "$lib/components/Img_morse_t.svelte";
+    import ImgMorseB from "$lib/components/Img_morse_b.svelte";
     import ImgClear from "$lib/assets/trash.svg";
 
     let normal_inp = "Convert whatever you want!";
@@ -105,6 +106,7 @@
 
 <div class="center">
     <ImgMorseT/>
+    <ImgMorseB/>
 
     <h1 class="title front">Morse converter</h1>
 

@@ -1,5 +1,6 @@
 <script>
     import ImgClear from "$lib/assets/trash.svg";
+    import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
   
     var input ="Text";
     var output = "20 5 24 20";
@@ -122,7 +123,7 @@
         
         <div class="change_box br">
             <button class="change_btn br bc_color" on:click={() => {change_to_a1z26 ? to_a1z26() : to_norm()}}></button>
-            <button on:click={swap_dir} class="dir_btn br">{#if change_to_a1z26}-&gt;{:else}&lt;-{/if}</button>
+            <button on:click={swap_dir} class="dir_btn br"><ChangeDirArrow right={change_to_a1z26}/></button>
         </div>
         
         <div class="output br">

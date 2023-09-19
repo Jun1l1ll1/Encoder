@@ -2,6 +2,7 @@
     import ImgBinaryB from "$lib/components/Img_binary_b.svelte";
     import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
     import ImgClear from "$lib/assets/trash.svg";
+    import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
   
 
     var input ="Text";
@@ -61,7 +62,7 @@
         
         <div class="change_box br">
             <button class="change_btn br bc_color" on:click={() => {change_to_binary ? to_binary() : to_norm()}}></button>
-            <button on:click={swap_dir} class="dir_btn br">{#if change_to_binary}-&gt;{:else}&lt;-{/if}</button>
+            <button on:click={swap_dir} class="dir_btn br"><ChangeDirArrow right={change_to_binary}/></button>
         </div>
         
         <div class="output br">

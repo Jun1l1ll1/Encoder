@@ -41,7 +41,7 @@
     .element {
         margin-top: 10px;
         width: 100%;
-        aspect-ratio: 1/1;
+        aspect-ratio: 3/2;
         display: flex;
         justify-content: center;
         align-items: center;

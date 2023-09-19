@@ -9,7 +9,6 @@
         top: 0px;
         left: 0px;
         width: 40%;
-        border: red solid 1px;
     }
 
     .binary_text {

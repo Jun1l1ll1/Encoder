@@ -11,6 +11,7 @@
 </script>
 
 <style>
+
     .icon {
         fill: var(--color);
         height: 60%;
@@ -64,7 +65,7 @@
     {#if cypher == "binary"}
         Binary
     {:else if cypher == ""}
-        Home
+        <span style="font-size: 35px;">⌂</span>
     {:else if cypher == "morse"}
         Morse
     {:else if cypher == "caesar"}

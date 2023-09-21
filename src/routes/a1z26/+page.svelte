@@ -1,4 +1,6 @@
 <script>
+    import ImgA1z26T from "$lib/components/Img_a1z26_t.svelte";
+    import ImgA1z26B from "$lib/components/Img_a1z26_b.svelte";
     import ImgClear from "$lib/assets/trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
   
@@ -82,19 +84,6 @@
         input = out;
     }
 
-    // function to_norm() {
-    //     let a1z26_list = output.split(" ")
-    //     let out = "";
-    //     for (let i = 0; i < a1z26_list.length; i++) {
-    //         if (a1z26_list[i] == "") {
-    //             out += " "
-    //         } else {
-    //             out += get_key_by_value(norm_to_a1z26, a1z26_list[i]);
-    //         }
-    //     }
-    //     input = out;
-    // }
-
     function swap_dir() {
         change_to_a1z26 = !change_to_a1z26;
     }
@@ -108,6 +97,8 @@
 -->
 
 <div class="center">
+    <ImgA1z26T/>
+    <ImgA1z26B/>
 
     <h1 class="title front">a1z26 converter</h1>
 

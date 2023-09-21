@@ -13,7 +13,7 @@
     .binary_text {
         fill: #00ff62;
         opacity: .2;
-        font-family: MyriadPro-Regular, 'Myriad Pro';
+        font-family: InputMono-Regular, 'Input Mono';
         font-size: 30px;
         glyph-orientation-vertical: 0deg;
         text-orientation: upright;

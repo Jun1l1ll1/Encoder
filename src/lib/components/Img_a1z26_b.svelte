@@ -17,6 +17,7 @@
         font-size: 30px;
         glyph-orientation-vertical: 0deg;
         text-orientation: upright;
+        letter-spacing: 5px;
         writing-mode: tb;
         user-select: none;
     }

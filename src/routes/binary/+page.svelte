@@ -3,6 +3,8 @@
     import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
     import ImgClear from "$lib/assets/trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
+
+    import autosize from 'svelte-autosize';
   
 
     var input ="Text";
@@ -32,11 +34,8 @@
     }
 
     function swap_dir() {
-        console.log("Swap")
-        console.log(normal(output))
         change_to_binary = !change_to_binary
     }
-
 
 </script>
 <!-- 
@@ -55,20 +54,20 @@
         <div class="input br">
             <h2>Text</h2>
 
-            <textarea bind:value={input} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={input} use:autosize class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
 
         </div>
         
         <div class="change_box br">
-            <button class="change_btn br bc_color" on:click={() => {change_to_binary ? to_binary() : to_norm()}}></button>
+            <button class="change_btn br bc_color" use:autosize on:click={() => {change_to_binary ? to_binary() : to_norm()}}></button>
             <button on:click={swap_dir} class="dir_btn br"><ChangeDirArrow right={change_to_binary}/></button>
         </div>
         
         <div class="output br">
             <h2>Binary</h2>
 
-            <textarea bind:value={output} class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={output} use:autosize class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button>
 
         </div>
@@ -86,7 +85,6 @@
         width: calc(100% - 71px);
         height: 100%;
         position: absolute;
-        /* border: 1px red solid; */
         display: flex;
         flex-direction: column;
         align-items: center;

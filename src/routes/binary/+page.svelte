@@ -16,17 +16,17 @@
     let output_size = ""
     let input_size = ""
 
+    async function resize() {
+        await tick();
+        autosize.update(output_size);
+        autosize.update(input_size);
+    }
+
     function to_binary() {
         output = "";
         for (var i = 0; i < input.length; i++) {
             output += (0b100000000 + input[i].charCodeAt(0)).toString(2).substring(1) + " ";
         }
-    }
-
-    async function resize() {
-        await tick();
-        autosize.update(output_size);
-        autosize.update(input_size);
     }
 
     function normal(output) {

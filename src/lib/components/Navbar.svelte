@@ -11,6 +11,7 @@
             <div style="height: 100px;" class="bc_dark_gray"></div>
             
             <a style="text-decoration: none;" href="/" class="element"><Icons cypher="" path={$page.url.pathname}/></a>
+            <a href="/qwer" class="element"><Icons cypher="qwer" path={$page.url.pathname}/></a>
             <a href="/a1z26" class="element"><Icons cypher="a1z26" path={$page.url.pathname}/></a>
             <a href="/atbash" class="element"><Icons cypher="atbash" path={$page.url.pathname}/></a>
             <a href="/binary" class="element"><Icons cypher="binary" path={$page.url.pathname}/></a>

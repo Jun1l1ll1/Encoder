@@ -74,5 +74,7 @@
         a1z26
     {:else if cypher == "atbash"}
         Atbash
+    {:else if cypher == "qwer"}
+        !"#¤
     {/if}
 {/if}

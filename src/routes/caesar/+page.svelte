@@ -11,10 +11,12 @@
     let shift_dir = "right";
     let shift_number = 2;
     let useÆØÅ = false;
+    let alph_len;
+    $: useÆØÅ, alph_len = useÆØÅ ? 29 : 26;
 
     function shift() {
+        shift_number > alph_len ? shift_number = alph_len : shift_number < 0 ? shift_number = 0 : "";
         let nr = shift_dir == "right" ? shift_number : -shift_number;
-        let alph_len = useÆØÅ ? 29 : 26;
 
         let new_text = "";
         for (let i = 0; i < input_text.length; i++) {
@@ -60,7 +62,7 @@
             </fieldset><br/>
             <fieldset class="br bc_dark_gray">
                 <legend>Shift amount</legend>
-                <input bind:value={shift_number} class="br bc_dark" style="border: none; padding: 5px; color:#00FF62;" type="number" placeholder="2">
+                <input bind:value={shift_number} min=0 max="{alph_len}" class="br bc_dark" style="border: none; padding: 5px; color:#00FF62;" type="number" placeholder="0<x<{alph_len}">
             </fieldset>
             <fieldset class="br bc_dark_gray">
                 <legend>ÆØÅ?</legend>

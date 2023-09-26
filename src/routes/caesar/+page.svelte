@@ -2,6 +2,9 @@
     import ImgClear from "$lib/assets/trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
+    import autosize from 'svelte-autosize';
+    import {tick} from 'svelte';
+
     const ALPHABETH = "ABCDEFGHIJKLMNOPQRSTUVWXYZÆØÅ";
 
     let input_text = "Convert whatever you want!";
@@ -13,6 +16,15 @@
     let useÆØÅ = false;
     let alph_len;
     $: useÆØÅ, alph_len = useÆØÅ ? 29 : 26;
+
+    let output_size = ""
+    let input_size = ""
+
+    async function resize() {
+        await tick();
+        autosize.update(output_size);
+        autosize.update(input_size);
+    }
 
     function shift() {
         shift_number > alph_len ? shift_number = alph_len : shift_number < 0 ? shift_number = 0 : "";
@@ -76,20 +88,20 @@
             <div class="input br">
                 <h2>Input</h2>
     
-                <textarea bind:value={input_text} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
+                <textarea bind:value={input_text} bind:this={input_size} use:autosize class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
                 <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
     
             </div>
             
             <div class="change_box br">
-                <button class="change_btn br bc_color" on:click={shift}></button>
+                <button class="change_btn br bc_color" on:click={shift} on:click={resize}></button>
                 <button class="dir_btn br"><ChangeDirArrow/></button>
             </div>
             
             <div class="output br">
                 <h2>Output</h2>
     
-                <textarea bind:value={output_text} class="output_input br bc_dark_gray" id="output_text" rows="5" cols="33" readonly></textarea>
+                <textarea bind:value={output_text} bind:this={output_size} use:autosize class="output_input br bc_dark_gray" id="output_text" rows="5" cols="33" readonly></textarea>
                 <!-- <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button> -->
     
             </div>

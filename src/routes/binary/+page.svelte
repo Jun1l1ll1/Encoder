@@ -5,18 +5,28 @@
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
     import autosize from 'svelte-autosize';
+    import {tick} from 'svelte';
   
 
-    var input ="Text";
+    var input = "Text";
     var output = "01010100 01100101 01111000 01110100";
 
     var change_to_binary = true;
+
+    let output_size = ""
+    let input_size = ""
 
     function to_binary() {
         output = "";
         for (var i = 0; i < input.length; i++) {
             output += (0b100000000 + input[i].charCodeAt(0)).toString(2).substring(1) + " ";
         }
+    }
+
+    async function resize() {
+        await tick();
+        autosize.update(output_size);
+        autosize.update(input_size);
     }
 
     function normal(output) {
@@ -31,6 +41,7 @@
     function to_norm() {
         input = ""
         input = normal(output)
+        autosize.update(input)
     }
 
     function swap_dir() {
@@ -54,20 +65,20 @@
         <div class="input br">
             <h2>Text</h2>
 
-            <textarea bind:value={input} use:autosize class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={input} bind:this={input_size} use:autosize class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
 
         </div>
         
         <div class="change_box br">
-            <button class="change_btn br bc_color" use:autosize on:click={() => {change_to_binary ? to_binary() : to_norm()}}></button>
+            <button class="change_btn br bc_color" on:click={() => {change_to_binary ? to_binary() : to_norm()}} on:click={resize}></button>
             <button on:click={swap_dir} class="dir_btn br"><ChangeDirArrow right={change_to_binary}/></button>
         </div>
         
         <div class="output br">
             <h2>Binary</h2>
 
-            <textarea bind:value={output} use:autosize class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={output} bind:this={output_size} use:autosize class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button>
 
         </div>

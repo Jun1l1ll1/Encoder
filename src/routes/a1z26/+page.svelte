@@ -3,11 +3,23 @@
     import ImgA1z26B from "$lib/components/Img_a1z26_b.svelte";
     import ImgClear from "$lib/assets/trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
+
+    import autosize from 'svelte-autosize';
+    import {tick} from 'svelte';
   
     var input ="Text";
     var output = "20 5 24 20";
 
     var change_to_a1z26 = true;
+
+    let output_size = ""
+    let input_size = ""
+
+    async function resize() {
+        await tick();
+        autosize.update(output_size);
+        autosize.update(input_size);
+    }
 
     function get_key_by_value(obj, value) {
         return Object.keys(obj).find(key => obj[key] === value);
@@ -107,20 +119,20 @@
         <div class="input br">
             <h2>Text</h2>
 
-            <textarea bind:value={input} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={input} bind:this={input_size} use:autosize class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
 
         </div>
         
         <div class="change_box br">
-            <button class="change_btn br bc_color" on:click={() => {change_to_a1z26 ? to_a1z26() : to_norm()}}></button>
+            <button class="change_btn br bc_color" on:click={() => {change_to_a1z26 ? to_a1z26() : to_norm()}} on:click={resize}></button>
             <button on:click={swap_dir} class="dir_btn br"><ChangeDirArrow right={change_to_a1z26}/></button>
         </div>
         
         <div class="output br">
             <h2>a1z26</h2>
 
-            <textarea bind:value={output} class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={output} bind:this={output_size} use:autosize class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear a1z26"/></button>
 
         </div>

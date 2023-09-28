@@ -5,6 +5,7 @@
     import Icons from "$lib/components/Icons.svelte";
 
     let ciphers = {
+        "!\"#¤ Cipher": {"code":"qwer", "txt":"£)n$#¤% /2(n5 ! 2&2%#{!%(£ #n£)3(n5 )n %6# 8#&b)!¤3"},
         "a1z26": {"code":"a1z26", "txt":"3 15 14 22 5 18 20  20 5 24 20  20 15  14 21 13 2 5 18 19"},
         "Atbash": {"code":"atbash", "txt":"Xlmevig gvcg drgs Zgyzhs xrksvi"},
         "Binary": {"code":"binary", "txt":"01000010 01101001 01101110 01100001 01110010 01111001 00100000 01100011 01101111 01100100 01100101"},

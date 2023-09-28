@@ -33,7 +33,7 @@
 
     <!-- The ability to scroll further down than the elements -->
     <div style="margin-top: 100px;">Made by <a href="https://github.com/IzzIzzIzzIzzI" target="_blank">IzzIzzIzzIzzI</a> and <a href="https://github.com/Jun1l1ll1" target="_blank">Jun1l1ll1</a></div>
-    <div>Project on <a href="https://github.com/Jun1l1ll1" target="_blank">github</a></div>
+    <div>Project on <a href="https://github.com/Jun1l1ll1/Encoder" target="_blank">github</a></div>
 </div>
 
 

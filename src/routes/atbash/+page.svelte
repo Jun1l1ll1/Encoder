@@ -1,5 +1,5 @@
 <script>
-    import ImgClear from "$lib/assets/trash.svg";
+    import ImgClear from "$lib/assets/Trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
     import autosize from 'svelte-autosize';

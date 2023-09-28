@@ -1,7 +1,7 @@
 <script>
     import ImgMorseT from "$lib/components/Img_morse_t.svelte";
     import ImgMorseB from "$lib/components/Img_morse_b.svelte";
-    import ImgClear from "$lib/assets/trash.svg";
+    import ImgClear from "$lib/assets/Trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
     import autosize from 'svelte-autosize';

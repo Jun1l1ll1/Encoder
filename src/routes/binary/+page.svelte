@@ -1,7 +1,7 @@
 <script>
     import ImgBinaryB from "$lib/components/Img_binary_b.svelte";
     import ImgBinaryT from "$lib/components/Img_binary_t.svelte";
-    import ImgClear from "$lib/assets/trash.svg";
+    import ImgClear from "$lib/assets/Trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
     import autosize from 'svelte-autosize';

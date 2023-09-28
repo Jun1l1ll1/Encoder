@@ -101,30 +101,65 @@
         align-items: center;
     }
 
-    .input_grid_cont {
-        display:grid; 
-        grid-template-columns: auto auto auto;
+    @media screen and (min-width: 700px) {
+        .input_grid_cont {
+            display:grid; 
+            grid-template-columns: auto auto auto;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .input_grid_cont {
+            display:grid; 
+            grid-template-columns: auto;
+        }
     }
 
     .title {
         margin-top: 75px;
+        text-align: center;
     }
 
-    .input {
-        width: 400px;
-        height: fit-content;
-        position: relative;
+    @media screen and (min-width: 700px) {
+        .input {
+            width: 400px;
+            height: fit-content;
+            position: relative;
+        }
     }
 
-    .input_input {
-        height: 200px;
-        min-height: 200px;
-        width: 400px;
-        max-width: 400px;
-        min-width: 400px;
-        border: none;
-        color: white;
-        font-family: "input-mono";
+    @media screen and (max-width: 700px) {
+        .input {
+            width: 200px;
+            height: fit-content;
+            position: relative;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .input_input {
+            height: 200px;
+            min-height: 200px;
+            width: 400px;
+            max-width: 400px;
+            min-width: 400px;
+            border: none;
+            color: white;
+            font-family: "input-mono";
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .input_input {
+            height: 150px;
+            min-height: 150px;
+            width: 250px;
+            max-width: 250px;
+            min-width: 250px;
+            border: none;
+            color: white;
+            font-family: "input-mono";
+        }
     }
 
     .del_btn {
@@ -153,13 +188,26 @@
         background-color: #00FF62;
     }
     
-    .change_box {
-        width: 100px;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    @media screen and (min-width: 700px) {
+        .change_box {
+            width: 100px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            padding-top: 120px;
+            align-items: center;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        .change_box {
+            width: 100px;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .change_btn {
@@ -172,20 +220,45 @@
         background-color: #00FF62;
     }
 
-    .output {
-        width: 400px;
-        height: fit-content;
-        position: relative;
+    @media screen and (min-width: 700px) {
+        .output {
+            width: 400px;
+            height: fit-content;
+            position: relative;
+        }
     }
 
-    .output_input {
-        height: 200px;
-        min-height: 200px;
-        width: 400px;
-        max-width: 400px;
-        min-width: 400px;
-        border: none;
-        color: white;
-        font-family: "input-mono";
-    } 
+    @media screen and (max-width: 700px) {
+        .output {
+            width: 200px;
+            height: fit-content;
+            position: relative;
+        }
+    }
+
+    @media screen and (min-width: 700px) {
+        .output_input {
+            height: 200px;
+            min-height: 200px;
+            width: 400px;
+            max-width: 400px;
+            min-width: 400px;
+            border: none;
+            color: white;
+            font-family: "input-mono";
+        } 
+    }
+
+    @media screen and (max-width: 700px) {
+        .output_input {
+            height: 150px;
+            min-height: 150px;
+            width: 250px;
+            max-width: 250px;
+            min-width: 250px;
+            border: none;
+            color: white;
+            font-family: "input-mono";
+        } 
+    }
 </style>

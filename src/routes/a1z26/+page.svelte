@@ -1,7 +1,7 @@
 <script>
     import ImgA1z26T from "$lib/components/Img_a1z26_t.svelte";
     import ImgA1z26B from "$lib/components/Img_a1z26_b.svelte";
-    import ImgClear from "$lib/assets/Trash.svg";
+    import ImgClear from "$lib/assets/trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
     import autosize from 'svelte-autosize';

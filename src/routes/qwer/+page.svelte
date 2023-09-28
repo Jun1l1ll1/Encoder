@@ -119,7 +119,7 @@
 
 <div class="center">
 
-    <h1 class="title front">!"#¤ Cipher</h1>
+    <h1 class="title front">!"#¤ Cipher Converter</h1>
 
     <div class="input_grid_cont front">
 

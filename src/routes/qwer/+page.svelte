@@ -2,10 +2,22 @@
     import ImgClear from "$lib/assets/trash.svg";
     import ChangeDirArrow from "$lib/components/Change_dir_arrow.svelte";
 
+    import autosize from 'svelte-autosize';
+    import {tick} from 'svelte';
+
     let normal_inp = "Convert whatever you want!";
     let qwer_inp = "£)n$#¤% \"6!%#$#¤ &)/ \"!n%|";
 
     let change_to_qwer = true;
+
+    let output_size = ""
+    let input_size = ""
+
+    async function resize() {
+        await tick();
+        autosize.update(output_size);
+        autosize.update(input_size);
+    }
 
     function get_key_by_value(obj, value) {
         return Object.keys(obj).find(key => obj[key] === value);
@@ -113,18 +125,18 @@
 
         <div class="input br">
             <h2>Text</h2>
-            <textarea bind:value={normal_inp} class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={normal_inp} bind:this={input_size} use:autosize class="input_input br bc_gray" id="input_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('input_text').value=''" class="del_btn br" ><img style="width: 20px;" src={ImgClear} alt="Clear normal"/></button>
         </div>
         
         <div class="change_box br">
-            <button on:click={() => {change_to_qwer ? to_qwer() : to_norm()}} class="change_btn br bc_color"></button>
+            <button on:click={() => {change_to_qwer ? to_qwer() : to_norm()}} on:click={resize} class="change_btn br bc_color"></button>
             <button on:click={swap_dir} class="dir_btn br"><ChangeDirArrow right={change_to_qwer}/></button>
         </div>
         
         <div class="output br">
             <h2>!"#¤</h2>
-            <textarea bind:value={qwer_inp} class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
+            <textarea bind:value={qwer_inp} bind:this={output_size} use:autosize class="output_input br bc_gray" id="output_text" rows="5" cols="33"></textarea>
             <button onclick="document.getElementById('output_text').value=''" class="del_btn br"><img style="width: 20px;" src={ImgClear} alt="Clear binary"/></button>
         </div>
     </div>

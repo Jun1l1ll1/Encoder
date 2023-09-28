@@ -200,7 +200,7 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        padding-top: 120px;
         align-items: center;
     }
 
